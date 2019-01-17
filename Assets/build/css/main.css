@@ -1,0 +1,411 @@
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.centerDiv {
+  width: 1100px;
+  margin: auto;
+}
+@media screen and (max-width: 1000px) {
+  .centerDiv {
+    width: 100%;
+    padding: 10px;
+  }
+}
+#landing {
+  min-height: 100vh;
+  font-family: 'edo_sz', sans-serif;
+  text-align: center;
+  background: transparent;
+}
+#landing header {
+  height: 100px;
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+  font-family: 'edo_sz', sans-serif;
+  padding: 0 20px;
+  color: white;
+  text-shadow: 1px 1px 10px black;
+}
+@media screen and (max-width: 1000px) {
+  #landing header {
+    -ms-flex-direction: column;
+        flex-direction: column;
+    height: auto;
+  }
+}
+#landing header h1 {
+  font-weight: normal;
+  font-size: 40px;
+}
+#landing header nav ul {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  -ms-flex-align: center;
+      align-items: center;
+}
+@media screen and (max-width: 1000px) {
+  #landing header nav ul {
+    -ms-flex-direction: column;
+        flex-direction: column;
+    border-bottom: 1px solid white;
+    padding-bottom: 20px;
+  }
+}
+#landing header nav ul li {
+  margin: 10px 25px;
+  border-bottom: 1px solid transparent;
+  transition: all .2s ease;
+}
+#landing header nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+}
+#landing header nav ul li:hover {
+  border-bottom: 1px solid white;
+}
+#landing .centerDiv {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  font-size: 100px;
+  color: white;
+}
+#landing .centerDiv p {
+  margin: 0;
+  padding: 0;
+  text-shadow: 1px 1px 10px black;
+}
+#landing .centerDiv p:nth-child(1) {
+  font-size: 150px;
+}
+@media screen and (max-width: 1000px) {
+  #landing .centerDiv p:nth-child(1) {
+    display: none;
+  }
+}
+#landing .centerDiv p:nth-child(2) {
+  font-size: 170px;
+}
+@media screen and (max-width: 1000px) {
+  #landing .centerDiv p:nth-child(2) {
+    display: none;
+  }
+}
+#landing .centerDiv p:nth-child(3) {
+  font-size: 50px;
+  margin-top: 10px;
+}
+#landing .centerDiv p:nth-child(4) {
+  font-size: 47px;
+  margin-top: 10px;
+}
+@media screen and (max-width: 1000px) {
+  #landing .centerDiv p:nth-child(4) {
+    font-size: 30px;
+  }
+}
+#landing .centerDiv p:nth-child(5) {
+  font-size: 75px;
+}
+#landing .centerDiv p:nth-child(5) span {
+  font-size: 110px;
+}
+@media screen and (max-width: 1000px) {
+  #landing .centerDiv p:nth-child(5) {
+    font-size: 50px;
+    margin-bottom: 15px;
+  }
+}
+#landing .centerDiv .buttons {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+@media screen and (max-width: 1000px) {
+  #landing .centerDiv .buttons {
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-align: center;
+        align-items: center;
+  }
+}
+#landing .centerDiv .buttons a {
+  display: block;
+  width: 325px;
+  height: 75px;
+  margin: 40px;
+  border: 3px solid white;
+  border-radius: 3px;
+  font-size: 30px;
+  line-height: 70px;
+  color: white;
+  text-decoration: none;
+  text-shadow: 1px 1px 10px black;
+  background: url('../../imgs/paint.jpg');
+  transition: all .3s ease;
+}
+@media screen and (max-width: 1000px) {
+  #landing .centerDiv .buttons a {
+    margin: 10px;
+  }
+}
+#landing .centerDiv .buttons a:hover {
+  background-position: -350px 0;
+}
+#lacourse {
+  background: url('../../imgs/paint.jpg');
+  background-size: cover;
+  min-height: 800px;
+  box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.5);
+}
+#lacourse .centerDiv h2 {
+  margin: 0;
+  padding: 50px;
+  text-align: center;
+  font-family: 'edo_sz', sans-serif;
+  color: white;
+  font-weight: normal;
+  font-size: 60px;
+}
+#lacourse .centerDiv .items {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+@media screen and (max-width: 1000px) {
+  #lacourse .centerDiv .items {
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
+}
+#lacourse .centerDiv .items .item {
+  width: 33%;
+  padding: 0 20px;
+  margin: 15px 0;
+}
+@media screen and (max-width: 1000px) {
+  #lacourse .centerDiv .items .item {
+    width: 100%;
+  }
+}
+#lacourse .centerDiv .items .item h3 {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'edo_sz', sans-serif;
+  color: white;
+  font-weight: normal;
+  font-size: 40px;
+}
+#lacourse .centerDiv .items .item p {
+  color: white;
+  font-family: Helvetica, sans-serif;
+  text-align: center;
+  font-size: 18px;
+  line-height: 25px;
+}
+#secourspopulaire .centerDiv {
+  padding-top: 25px;
+  font-size: 25px;
+  line-height: 35px;
+  font-family: "Helvetica", sans-serif;
+  text-align: right;
+}
+#secourspopulaire .centerDiv h2 {
+  font-family: 'edo_sz', sans-serif;
+  color: white;
+  font-weight: normal;
+  font-size: 60px;
+  text-align: left;
+}
+@media screen and (max-width: 1000px) {
+  #secourspopulaire .centerDiv h2 {
+    text-align: center;
+    line-height: 45px;
+  }
+}
+#secourspopulaire .centerDiv img {
+  float: left;
+  width: 200px;
+  margin: 50px 15px 15px 0;
+}
+#secourspopulaire .centerDiv p {
+  color: white;
+  text-shadow: 0px 0px 25px black;
+  text-align: left;
+}
+#secourspopulaire .centerDiv p:last-of-type {
+  margin-bottom: 0;
+}
+@media screen and (max-width: 1000px) {
+  #secourspopulaire .centerDiv {
+    text-align: center;
+  }
+}
+#secourspopulaire .centerDiv .btn {
+  display: inline-block;
+  padding: 10px;
+  height: 75px;
+  line-height: 75px;
+  padding: 0 10px;
+  margin: 0 0 45px 0;
+  border: 3px solid white;
+  border-radius: 3px;
+  color: white;
+  text-decoration: none;
+  font-family: 'edo_sz', sans-serif;
+  background: url('../../imgs/paint.jpg');
+  transition: all .3s ease;
+}
+#secourspopulaire .centerDiv .btn:hover {
+  background-position: -350px 0;
+}
+#partenaires {
+  min-height: 250px;
+  background: url('../../imgs/paint.jpg');
+  background-size: cover;
+  box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.5);
+  padding-bottom: 10px;
+}
+@media screen and (max-width: 1000px) {
+  #partenaires {
+    height: auto;
+    min-height: 250px;
+  }
+}
+#partenaires h2 {
+  font-family: 'edo_sz', sans-serif;
+  color: white;
+  text-align: center;
+  margin: 0;
+  font-weight: normal;
+  padding-top: 25px;
+  font-size: 30px;
+}
+#partenaires .logo-sponsors {
+  text-align: center;
+  padding-top: 25px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+#partenaires .logo-sponsors .round {
+  vertical-align: middle;
+  margin: 0 10px;
+  width: 160px;
+  height: 160px;
+  background: white;
+  border-radius: 300px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+}
+#partenaires .logo-sponsors .round img {
+  width: 110px;
+}
+#village {
+  min-height: 800px;
+}
+#village h2 {
+  font-family: 'edo_sz', sans-serif;
+  color: white;
+  text-align: left;
+  margin: 0;
+  font-weight: normal;
+  padding-top: 25px;
+  font-size: 60px;
+}
+#village .content {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+}
+#village .content > div {
+  width: 50%;
+}
+@media screen and (max-width: 1000px) {
+  #village .content {
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-align: center;
+        align-items: center;
+  }
+  #village .content > div {
+    width: 100%;
+  }
+}
+#village .content #presentation {
+  color: white;
+  font-size: 18px;
+  line-height: 30px;
+  font-family: "Helvetica", sans-serif;
+  padding: 0 10px 0 0;
+  text-shadow: 1px 1px 10px black;
+}
+#village .content #map {
+  width: 550px;
+  height: 600px;
+  border: 3px solid white;
+}
+@media screen and (max-width: 1000px) {
+  #village .content #map {
+    width: 90%;
+  }
+}
+footer {
+  height: 150px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  background: url('../../imgs/paint.jpg');
+  background-size: cover;
+  box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.5);
+  font-family: 'edo_sz', sans-serif;
+  font-size: 20px;
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px 10px black;
+}
+footer a {
+  color: white;
+  text-decoration: none;
+  border-bottom: 1px solid white;
+}
